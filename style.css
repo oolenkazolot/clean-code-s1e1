@@ -7,8 +7,7 @@
   font-family: Lato, sans-serif;
   }
 
-.input, 
-.btn {
+.input, .btn {
   outline: none;
   }
   
@@ -19,7 +18,7 @@
   font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
-  cursor: pointer   
+  cursor: pointer;   
 }
   
 .btn:hover {
