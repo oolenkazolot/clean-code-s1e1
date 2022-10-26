@@ -7,7 +7,8 @@
   font-family: Lato, sans-serif;
   }
 
-.input, .btn {
+.input, 
+.btn {
   outline: none;
   }
   
