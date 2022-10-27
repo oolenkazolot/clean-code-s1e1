@@ -24,13 +24,12 @@ var createNewTaskElement = function (taskString) {
   //label
   var label = document.createElement('label'); //label
   label.classList.add('todo__label');
-  label.classList.add('task');
 
   //input (text)
   var editInput = document.createElement('input'); //text
   editInput.classList.add('todo__content');
   editInput.classList.add('input');
-  editInput.classList.add('task');
+
   //button.edit
   var editButton = document.createElement('button'); //edit button
   editButton.classList.add('todo__edit');
@@ -87,10 +86,10 @@ var editTask = function () {
   var editInput = listItem.querySelector('input[type=text]');
   var label = listItem.querySelector('label');
   var editBtn = listItem.querySelector('.todo__edit');
-  var containsClass = listItem.classList.contains('edit-mode');
-  //If class of the parent is .edit-mode
+  var containsClass = listItem.classList.contains('todo__list-item--edit');
+  //If class of the parent is .todo__list-item--edit
   if (containsClass) {
-    //switch to .edit-mode
+    //switch to .todo__list-item--edit
     //label becomes the inputs value.
     label.innerText = editInput.value;
     editBtn.innerText = 'Edit';
@@ -100,7 +99,7 @@ var editTask = function () {
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle('edit-mode');
+  listItem.classList.toggle('todo__list-item--edit');
 };
 
 //Delete task.
