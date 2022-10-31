@@ -12,6 +12,7 @@ var addButton = document.querySelector('.btn_add'); //first button
 var incompleteTaskHolder = document.querySelector('.todo__list_incomplete'); //ul of #incompleteTasks
 var completedTasksHolder = document.querySelector('.todo__list_completed'); //completed-tasks
 
+
 //New task list item
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement('li');
@@ -152,6 +153,7 @@ addButton.addEventListener('click', ajaxRequest);
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log('bind list item events');
   //select ListItems children
+
   var checkBox = taskListItem.querySelector('.todo__checkbox');
   var editButton = taskListItem.querySelector('.btn_edit');
   var deleteButton = taskListItem.querySelector('.btn_delete');
